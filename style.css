@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login__logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.login__main__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.login__main__form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login__main__form input[type="text"],
+.login__main__form input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.login__main__form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.login__main__form button:hover {
+    background-color: #0056b3;
+}
+
+.signup__link {
+    text-decoration: none;
+}
+
+.signup__username__error__message,
+.signup__pw__error__message,
+.signup__email__error__message,
+.signup__confirm__password__error__message,
+.username__error__message,
+.pw__error__message {
+    color: red;
+    margin-bottom: 10px;
+}
+
+
+/* trang signup */
+.signup__logo img {
+    max-width: 100px;
+    display: block;
+    margin: 0 auto 20px;
+}
+
+.signup__main__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.signup__main__form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.signup__main__form input[type="text"],
+.signup__main__form input[type="email"],
+.signup__main__form input[type="password"] {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signup__main__form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.signup__main__form button:hover {
+    background-color: #0056b3;
+}
+
+.signup__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 10px;
+}
+
+.login__link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 10px;
+}
