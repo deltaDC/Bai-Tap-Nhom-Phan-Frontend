@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Điểm sinh viên</title>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/student_res.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div id="navbar-container">
+            <nav class="navbar">
+                <ul class="navbar1-nav">
+                    <li class="nav1-item">
+                        <a href="index.html" class="nav1-link">Đăng nhập</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/signup.html" class="nav1-link">Đăng ký</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Trang chính</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Bài thi</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Kết quả</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/admin-login.html" class="nav1-link">Đăng nhập Admin</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Dashboard Admin</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/exam.html" class="nav1-link">Tạo/Chỉnh sửa Kỳ thi</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/statistic.html" class="nav1-link">Thống kê</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/student_infomation.html" class="nav1-link">Xem kết quả Sinh viên</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <section class="container">
+            <h1>Tra cứu sinh viên</h1>
+            <div class="search_box">
+                <form id="search-form">
+                    <label for="info" id="search_form_label">Nhập mã sinh viên:</label>
+                    <input type="text" name="studentInfo" id="info">
+                    <button type="submit" id="search_form_submit" class="btn btn-primary btn-danger">Tra cứu</button>
+                </form>
+                <div id="result"></div>
+                <button class="btn btn-primary" id="print-result" type="submit" style="margin-top: 20px;">Xuất báo cáo</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+<script src="/js/student_res.js"></script>
+<script src="/js/onscripts.js"></script>
+
+
+</html>
