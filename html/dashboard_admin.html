@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/dashboard_admin.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="navigation">
+        <ul>
+            <li><a href="#" onclick="showPanel('exams')">Quản lý danh sách kỳ thi</a></li>
+            <li><a href="#" onclick="showPanel('users')">Quản lý danh sách người dùng</a></li>
+            <li><a href="#" onclick="showPanel('statistics')">Thống kê</a></li>
+        </ul>
+    </div>
+
+
+    <div id="exams" class="panel">
+        <h2>Quản lý danh sách kỳ thi</h2>
+        <div class="create-container">
+            <input type="text" id="exam_name" placeholder="Tên kỳ thi">
+            <select id="exam_mode">
+                <option value="Luyện tập">Luyện tập</option>
+                <option value="Giữa kỳ">Giữa kỳ</option>
+                <option value="Cuối kỳ">Cuối kỳ</option>
+            </select>
+            <input type="date" id="exam_date">
+            <button onclick="addExam()">Tạo</button>
+        </div>
+        <ul id="exam_list">
+            <!-- Danh sách kỳ thi sẽ được hiển thị ở đây -->
+        </ul>
+
+        <div id="delete_form" style="display: none;">
+            <p>Bạn có chắc chắn muốn xóa kỳ thi này?</p>
+            <button id="confirm_delete_button">Xác nhận</button>
+            <button id="cancel_delete_button">Hủy</button>
+        </div>
+    </div>
+
+    <div id="users" class="panel">
+        <h2>Quản lý danh sách người dùng</h2>
+        <div class="create-container">
+            <input type="text" id="full_name" placeholder="Họ tên">
+            <input type="date" id="birth_date" placeholder="Ngày sinh">
+            <input type="text" id="student_id" placeholder="Mã sinh viên">
+            <input type="text" id="class" placeholder="Lớp">
+            <button onclick="addUser()">Tạo</button>
+        </div>
+        <ul id="user_list">
+            <!-- Danh sách người dùng sẽ được hiển thị ở đây -->
+        </ul>
+        <div id="delete_form" style="display: none;">
+            <p>Bạn có chắc chắn muốn xóa người dùng này?</p>
+            <button id="confirm_delete_button">Xác nhận</button>
+            <button id="cancel_delete_button">Hủy</button>
+        </div>
+    </div>
+
+    <div id="statistics" class="panel">
+        <h2>Thống kê</h2>
+        <div id="statistics_content">
+            <!-- Thống kê sẽ được hiển thị ở đây -->
+        </div>
+    </div>
+
+    <script src="../js/dashboard_admin.js"></script>
+    <script src="../utils/utils.js"></script>
+</body>
+
+</html>

@@ -4,7 +4,17 @@
     box-sizing: border-box;
 }
 
-body {
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f2f2f2;
     min-height: 90vh;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -13,8 +23,7 @@ body {
 }
 
 header {
-    max-width: 80%;
-    margin: 20px auto;
+    margin: 2rem auto 0 auto;
     padding: 0 20px;
     background-color: #2b506e;
     border-radius: 5px;
@@ -82,7 +91,7 @@ input[type=text] {
 }
 
 #examInfoList {
-    min-height: 65vh;
+    min-height: 55vh;
     display: flex;
     flex-direction: column;
     border: 1px solid #ccc;
@@ -115,7 +124,7 @@ input[type=text] {
     }
 
     span.exam-status {
-        width: 10%;
+        width: 20%;
         text-align: center;
     }
 }

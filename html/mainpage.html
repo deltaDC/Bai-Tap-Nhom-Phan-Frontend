@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trang Chính - Hệ Thống Thi Trắc Nghiệm Trực Tuyến</title>
     <link rel="stylesheet" href="../css/mainpage.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+
     <style>
         .exam-info {
             display: flex;
@@ -21,12 +23,13 @@
 </head>
 
 <body>
-    <header>
-        <h1>Hệ Thống Thi Trắc Nghiệm Trực Tuyến</h1>
-    </header>
-    <div class="container">
-        <h2>Danh Sách Kỳ Thi</h2>
+    <div id="navbar-container"></div>
 
+
+    <div class="container">
+        <header>
+            <h1>Hệ Thống Thi Trắc Nghiệm Trực Tuyến</h1>
+        </header>
         <div id="examList">
             <button class="exam-item" onclick="showAllExams()">Tất cả</button>
             <button class="exam-item" onclick="showExams('Luyện tập')">Luyện tập</button>
@@ -40,6 +43,8 @@
     </div>
 
     <script src="../js/mainpage.js"></script>
+    <script src="../utils/utils.js"></script>
+
 </body>
 
 </html>
