@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kết Quả Bài Thi</title>
+    <link rel="stylesheet" href="../css/ketqua.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+</head>
+
+<body>
+    <div id="navbar-container"></div>
+    <div class="container">
+        <h1>Kết Quả Bài Thi</h1>
+        <div id="result">
+            <p id="correct-answers">Số câu trả lời đúng: <span id="correct-count"></span></p>
+            <p id="total-questions">Tổng số câu: <span id="total-count"></span></p>
+            <p id="score">Điểm số: <span id="score-value"></span></p>
+            <div id="answers-review" style="display: none;">
+                <table id="answers-table">
+                    <thead>
+                        <tr>
+                            <th>Câu</th>
+                            <th>Đáp án đúng</th>
+                            <th>Đáp án bạn chọn</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button id="review-btn">Xem lại câu trả lời</button>
+        </div>
+    </div>
+    <script src="../js/ketqua.js"></script>
+    <script src="../utils/utils.js"></script>
+</body>
+
+</html>
