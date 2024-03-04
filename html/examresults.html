@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Tables - SB Admin</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }   
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/footer.css">
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+
+    <div id="layoutSidenav">
+
+        <div id="layoutSidenav_content" style="padding-left: 0px;">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">Chi tiết kết quả kỳ thi của sinh viên</h1>
+                   
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            Trang kết quả kỳ thi.
+                        </div>
+
+                    </div>
+
+                    <div class="card mb-4">
+                        <div class="card-header">
+
+                        </div>
+                        <div class="card-body">
+                            <h2 class="card-score">
+                                Kết quả:
+                            </h2>
+                        </div>
+                        <table id="result-table" class="table">
+                            <thead>
+                                <tr>
+                                    <th>Câu</th>
+                                    <th>Đáp án</th>
+                                    <th>Đáp án của sinh viên</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>A</td>
+                                    <td>A</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>B</td>
+                                    <td style="color: red;">A</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>A</td>
+                                    <td style="color: red;">C</td>
+                                </tr>
+                                <tr>
+                                    <td>4</td>
+                                    <td>D</td>
+                                    <td>D</td>
+                                </tr>
+                                <tr>
+                                    <td>5</td>
+                                    <td>D</td>
+                                    <td>D</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>A</td>
+                                    <td style="color: red;">D</td>
+                                </tr>
+                                <tr>
+                                    <td>7</td>
+                                    <td>B</td>
+                                    <td>B</td>
+                                </tr>
+                                <tr>
+                                    <td>8</td>
+                                    <td>B</td>
+                                    <td style="color: red;">A</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>A</td>
+                                    <td style="color: red;">B</td>
+                                </tr>
+                                <tr>
+                                    <td>10</td>
+                                    <td>C</td>
+                                    <td style="color: red;">A</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="print-button" style="display: flex; justify-content: flex-end;">
+                        <button class="btn btn-primary" id="print-result" type="submit"">In kết quả</button>
+                    </div>
+                </div>
+            </main>
+            <footer id="footer">
+                <p>Copyright © 2024 Học viện Công nghệ Bưu chính Viễn thông</p>
+                <p>Version: BCVT-2024.01G.23</p>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+        crossorigin="anonymous"></script>
+    <script src="js/datatables-simple-demo.js"></script>
+    <script src="js/onscripts"></script>
+
+</body>
+
+</html>
