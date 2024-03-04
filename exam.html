@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Tạo/Chỉnh sửa Kỳ thi</title>
+    <link rel="stylesheet" href="css/exam.css">
+</head>
+
+<body>
+    <h1>Trang Tạo/Chỉnh sửa Kỳ thi</h1>
+    <form id="examForm">
+        <label for="examName">Tên kỳ thi:</label>
+        <input type="text" id="examName" name="examName" required><br>
+        <label for="description">Mô tả:</label>
+        <textarea id="description" name="description"></textarea><br>
+        <label for="examType">Loại kỳ thi:</label>
+        <select id="examType" name="examType">
+            <option value="free">Tự do</option>
+            <option value="timed">Thời gian cụ thể</option>
+        </select><br>
+        <label for="question">Danh sách câu hỏi:</label>
+        <div id="questionList">
+
+        </div>
+        <button type="button" id="addQuestion">Thêm câu hỏi</button>
+        <label for="excelInput" class="file-input-button">Lấy câu hỏi từ Excel
+            <input type="file" id="excelInput"></label>
+        <button type="submit">Lưu kỳ thi</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.4/xlsx.full.min.js"></script>
+    <script src="js/exam.js"></script>
+</body>
+
+</html>
