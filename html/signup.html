@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="../css/signup.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="signup">
+            <div class="signup__main">
+                <div class="signup__logo">
+                    <img src="https://code.ptit.edu.vn/2020/images/logo_ptit.png" alt="Logo">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="signup__main__title">
+                            <p>Đăng ký</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <form class="signup__main__form">
+                            <input type="hidden" name="_token">
+                            <label for="signup__username">Tên người dùng</label>
+                            <input type="text" name="username" id="signup__username" value="" autofocus
+                                class="input--active">
+                            <div class="signup__username__error__message"></div>
+
+                            <label for="signup__email">Email</label>
+                            <input type="email" name="email" id="signup__email" value="" class="input--active">
+                            <div class="signup__email__error__message"></div>
+
+                            <label for="signup__password">Mật khẩu</label>
+                            <input type="password" name="password" id="signup__password" class="input--active">
+                            <div class="signup__pw__error__message"></div>
+
+                            <label for="signup__confirm_password">Xác nhận mật khẩu</label>
+                            <input type="password" name="confirm_password" id="signup__confirm__password"
+                                class="input--active">
+                            <div class="signup__confirm__password__error__message"></div>
+
+                            <button type="submit"><span>Đăng ký</span></button>
+                        </form>
+                        <a class="login__link" href="../index.html">Đăng nhập</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/signupvalidate.js"></script>
+</body>
+
+</html>
