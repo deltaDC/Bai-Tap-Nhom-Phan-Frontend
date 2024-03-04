@@ -14,11 +14,12 @@
             width: 100%;
         }
 
-        th, td {
+        th,
+        td {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
-        }   
+        }
 
         th {
             background-color: #f2f2f2;
@@ -33,12 +34,47 @@
 <body class="sb-nav-fixed">
 
     <div id="layoutSidenav">
-
+        <div id="navbar-container">
+            <nav class="navbar">
+                <ul class="navbar1-nav">
+                    <li class="nav1-item">
+                        <a href="index.html" class="nav1-link">Đăng nhập</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/signup.html" class="nav1-link">Đăng ký</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Trang chính</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Bài thi</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Kết quả</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/admin-login.html" class="nav1-link">Đăng nhập Admin</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="" class="nav1-link">Dashboard Admin</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/exam.html" class="nav1-link">Tạo/Chỉnh sửa Kỳ thi</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/statistic.html" class="nav1-link">Thống kê</a>
+                    </li>
+                    <li class="nav1-item">
+                        <a href="../html/examresults.html" class="nav1-link">Xem kết quả Sinh viên</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <div id="layoutSidenav_content" style="padding-left: 0px;">
             <main>
                 <div class="container-fluid px-4">
                     <h1 class="mt-4">Chi tiết kết quả kỳ thi của sinh viên</h1>
-                   
+
                     <div class="card mb-4">
                         <div class="card-body">
                             Trang kết quả kỳ thi.
@@ -114,7 +150,7 @@
                                     <td>C</td>
                                     <td style="color: red;">A</td>
                                 </tr>
-                                
+
                             </tbody>
                         </table>
                     </div>
@@ -123,19 +159,19 @@
                     </div>
                 </div>
             </main>
-            <footer id="footer">
-                <p>Copyright © 2024 Học viện Công nghệ Bưu chính Viễn thông</p>
-                <p>Version: BCVT-2024.01G.23</p>
-            </footer>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
-        crossorigin="anonymous"></script>
-    <script src="js/datatables-simple-demo.js"></script>
-    <script src="js/onscripts"></script>
+            <footer id=" footer">
+                            <p>Copyright © 2024 Học viện Công nghệ Bưu chính Viễn thông</p>
+                            <p>Version: BCVT-2024.01G.23</p>
+                            </footer>
+                    </div>
+                </div>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+                    crossorigin="anonymous"></script>
+                <script src="js/scripts.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js"
+                    crossorigin="anonymous"></script>
+                <script src="js/datatables-simple-demo.js"></script>
+                <script src="js/onscripts"></script>
 
 </body>
 
