@@ -1,15 +1,21 @@
 var examSubjects = {
     "Luyện tập": [
-        { name: "Trắc nghiệm Toán rời rạc", status: "free" },
+        { name: "Tin học cơ sở", status: "free" },
         { name: "Lập trình Web", status: "free" }
     ],
     "Giữa kỳ": [
-        { name: "Lý thuyết thông tin", status: "20/4/2024" }
+        { name: "Lý thuyết thông tin", status: "20/4/2024" },
+        { name: "Trắc nghiệm Toán rời rạc", status: "25/4/2024" },
     ],
     "Cuối kỳ": [
         { name: "Đại số", status: "30/4/2024" }
     ]
 };
+
+function startExam(examName) {
+
+    window.location.href = "baiThi.html"
+}
 
 function displayAllSubjects() {
     var examInfoDiv = document.getElementById('examInfoList');
@@ -26,6 +32,9 @@ function displayAllSubjects() {
                 var subjectNameSpan = document.createElement('span');
                 subjectNameSpan.classList.add('exam-name');
                 subjectNameSpan.textContent = count + ". " + exam.name;
+                subjectNameSpan.onclick = function () {
+                    startExam(exam.name);
+                };
                 subjectDiv.appendChild(subjectNameSpan);
 
                 var modeSpan = document.createElement('span');

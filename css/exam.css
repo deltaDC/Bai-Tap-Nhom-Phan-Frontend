@@ -89,15 +89,18 @@ tbody td {
     padding: 10px;
 }
 
-tbody td[data-v^="test câu hỏi"] {
+tbody td[data-v^="Test cau hoi 1"],
+tbody td[data-v^="Test cau hoi 2"],
+tbody td[data-v^="Test cau hoi 3"] {
     font-weight: bold;
 }
 
-tbody td[data-v^="A Đáp án"],
-tbody td[data-v^="B Đáp án"],
-tbody td[data-v^="C Đáp án"],
-tbody td[data-v^="D Đáp án"] {
+tbody td[data-v="Test dap an A"],
+tbody td[data-v="Test dap an B"],
+tbody td[data-v="Test dap an C"],
+tbody td[data-v="Test dap an D"] {
     margin-left: 20px;
+    border: #dc3545;
 }
 
 .answerDiv {

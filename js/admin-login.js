@@ -29,6 +29,6 @@ document.addEventListener('DOMContentLoaded', function () {
             return
         }
         console.log('Form hợp lệ, có thể gửi đăng nhập tới server!')
-        window.location.href = "../html/mainpage.html"
+        window.location.href = "../html/dashboard_admin.html"
     })
 })

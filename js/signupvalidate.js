@@ -50,5 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
         }
 
         console.log('Form hợp lệ, có thể gửi đăng ký tới server!');
+        window.location.href = "../index.html"
     });
 });

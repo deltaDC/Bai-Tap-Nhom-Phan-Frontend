@@ -171,23 +171,23 @@ function editUser(index) {
 }
 
 
-function showDeleteForm(index) {
-    let deleteForm = document.getElementById('delete_form');
-    deleteForm.style.display = 'block';
+// function showDeleteForm(index) {
+//     let deleteForm = document.getElementById('delete_form');
+//     deleteForm.style.display = 'block';
 
-    // Thiết lập sự kiện cho nút xác nhận xóa
-    let confirmButton = document.getElementById('confirm_delete_button');
-    confirmButton.onclick = function () {
-        deleteUser(index);
-        deleteForm.style.display = 'none'; // Ẩn form xóa sau khi xác nhận
-    };
+//     // Thiết lập sự kiện cho nút xác nhận xóa
+//     let confirmButton = document.getElementById('confirm_delete_button');
+//     confirmButton.onclick = function () {
+//         deleteUser(index);
+//         deleteForm.style.display = 'none'; // Ẩn form xóa sau khi xác nhận
+//     };
 
-    // Thiết lập sự kiện cho nút hủy
-    let cancelButton = document.getElementById('cancel_delete_button');
-    cancelButton.onclick = function () {
-        deleteForm.style.display = 'none'; // Ẩn form xóa nếu hủy
-    };
-}
+//     // Thiết lập sự kiện cho nút hủy
+//     let cancelButton = document.getElementById('cancel_delete_button');
+//     cancelButton.onclick = function () {
+//         deleteForm.style.display = 'none'; // Ẩn form xóa nếu hủy
+//     };
+// }
 
 function deleteUser(index) {
     users.splice(index, 1);

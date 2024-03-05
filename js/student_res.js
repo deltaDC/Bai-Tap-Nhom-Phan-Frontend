@@ -30,6 +30,7 @@ document.getElementById("search-form").addEventListener("submit", function (even
         var studentExams = data.filter(function (item) {
             return item.id.toUpperCase() === studentId.toUpperCase();
         });
+        console.log(studentExams)
         studentExams.forEach(function (item, index) {
 
             table += "<tr><td>" + (index + 1) + "</td><td>" + item.exam + "</td><td>" + item.score + "</td></tr>";
